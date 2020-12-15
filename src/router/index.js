@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Landing from '../views/Landing.vue'
-import Landing from '../views/Visualization.vue'
-import Landing from '../views/Comparisons.vue'
-import Landing from '../views/Data.vue'
+import Visualization from '../views/Visualization.vue'
+import Comparisons from '../views/Comparisons.vue'
+import Data from '../views/Data.vue'
 
 Vue.use(VueRouter)
 

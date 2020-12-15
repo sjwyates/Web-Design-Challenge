@@ -1,21 +1,23 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/comparisons">Comparisons</router-link>
-      <router-link to="/data">Data</router-link>
-    </div>
+  <div id="app" class="has-background-light has-text-centered has-text-left-desktop">
+    <Nav />
     <router-view/>
+
   </div>
 </template>
 
 
 <script>
+  import Nav from './components/Nav'
+
   export default {
-    
+    components: {
+      Nav
+    }
   }
 </script>
 
-<style>
+<style lang="scss">
+  @import 'assets/scss/main.scss';
 
 </style>
