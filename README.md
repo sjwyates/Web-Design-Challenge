@@ -25,3 +25,11 @@ I went with [Vue](https://vuejs.org/), because it's great and makes it super eas
 I'd also gotten a bit tired of using Bootstrap in class, so I called an audible and substituted in [Bulma](https://bulma.io/). Not that I hate Bootstrap with as much of a passion as a lot of people, it's just that Bulma's more lightweight and feels breezier and less opinionated.
 
 Once I started using Bulma, and with npm already initialized, I thought I might as well throw [Sass](https://sass-lang.com/) into the mix, but to be honest I didn't put it to use much in the end. After all, the original motivation for using SCSS in the initial Flask iteration was to make it look less Bootstrapy, and switching to Bulma already accomplished that.
+
+## Conclusions
+
+There's a lot more I would add to this if it weren't pretty overboard and past deadline already. There's still quite a bit of hard-coding, and I'd really like to do some Bulma Sass customization, but I'll leave it there for now.
+
+If you have any questions, I'm always happy to chat.
+
+Cheers
