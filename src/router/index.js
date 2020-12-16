@@ -14,7 +14,7 @@ const routes = [
     component: Landing
   },
   {
-    path: '/plots/:id',
+    path: '/plots/:slug',
     name: 'Visualization',
     component: Visualization
   },

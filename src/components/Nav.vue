@@ -19,20 +19,29 @@
                     <a class="navbar-link">Plots</a>
 
                     <div class="navbar-dropdown">
-                        <router-link to="/plots/margins" class="navbar-item">Average Margins</router-link>
-                        <router-link to="/plots/my-scores" class="navbar-item">My Scores</router-link>
-                        <router-link to="/plots/my-opponents-scores" class="navbar-item">My Opponent's Scores</router-link>
+                        <router-link v-for="slug in slugs" :key="slug.name" :to="'/plots/' + slug.slug" class="navbar-item">{{ slug.name }}</router-link>
                     </div>
                 </div>
+                <router-link v-for="route in routes" :key="route.name" :to="route.route" class="navbar-item">{{ route.name }}</router-link>
             </div>
-            <router-link to="/comparisons" class="navbar-item">Comparisons</router-link>
-            <router-link to="/data" class="navbar-item">Data</router-link>
         </div>
     </nav>
 </template>
 
 <script>
     export default {
+        data() {
+            return {
+                routes: [{ name: 'Comparisons', route: '/comparisons'}, { name: 'Data', route: '/data'}],
+                slugs: [
+                    { name: 'Average PPW/PPL', slug: 'ppw-ppl' },
+                    { name: 'Average Margins', slug: 'margins' },
+                    { name: 'Best Player', slug: 'best-player' },
+                    { name: 'Worst Player', slug: 'worst-player' }
+                ],
+                selected: this.$route
+            }
+        },
         
     }
 </script>

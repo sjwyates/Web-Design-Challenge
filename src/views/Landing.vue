@@ -22,19 +22,7 @@
                     </div>
                 </div>
                 <div class="column is-one-third has-background-white m-2">
-                    <div class="content">
-                        <h2 class="has-text-info pt-5 px-5">Visualizations</h2>
-                        <router-link to="/plots/margins" title="Average winning/losing margins">
-                            <img :src="require('../assets/images/plots/avg-margins.png')" alt="Average Margins">
-                        </router-link>
-                        <router-link to="/plots/my-scores" title="My weekly scores">
-                            <img :src="require('../assets/images/plots/stu_scores.png')" alt="My weekly scores">
-                        </router-link>
-                        <router-link to="/plots/my-opponents-scores" title="My opponent's weekly scores">
-                            <img :src="require('../assets/images/plots/stu_opponent_scores.png')" alt="My opponent's weekly scores">
-                        </router-link>
-                        <router-view/>
-                    </div>
+                    <Sidebar :slug="none" />
                 </div>
             </div>
         </div>
@@ -42,9 +30,11 @@
 </template>
 
 <script>
+    import Sidebar from '../components/Sidebar.vue';
     export default {
-        
-    }
+        components: {
+            Sidebar
+        }}
 </script>
 
 <style lang="scss" scoped>
