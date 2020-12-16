@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="container is-max-desktop has-background-white p-6">
+    <div class="container is-widescreen has-background-white p-6">
       <h1 class="title has-text-info py-5">Data</h1>
       <div class="tabs">
         <ul>
@@ -413,4 +413,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+    table {
+        margin: 0rem auto;
+    }
+</style>
