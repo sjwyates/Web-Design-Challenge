@@ -1,4 +1,4 @@
-# Web Design Challenege
+# Web Design Challenge
 
 ## Overview
 
